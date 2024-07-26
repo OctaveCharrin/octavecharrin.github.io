@@ -2,3 +2,59 @@ baseURL: 'https://OctaveCharrin.github.io/OctaveCharrin.github.io'
 languageCode: 'en-us'
 title: 'Octave Charrin'
 theme: 'PaperMod'
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  math: true
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Octave Charrin
+  keywords: 
+  author: Octave Charrin
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  label:
+    text: "Octave Charrin"
+    icon:
+    iconHeight: 30
+
+  # profile-mode
+  profileMode:
+    enabled: true # needs to be explicitly set
+    title: "\U0001F44B Welcome ! "
+    subtitle: "This is the website of **Octave Charrin**. "
+    # https://unicode.org/emoji/charts/full-emoji-list.html#1f468_200d_1f3a8
+    buttons:
+      - name: About
+        url: about
+
+  socialIcons:
+    - name: linkedin
+      url: "https://www.linkedin.com/in/"
+    - name: github
+      url: "https://github.com/OctaveCharrin"
+
+
+menu:
+  main:
+    - identifier: About
+      name: about
+      url: /about/
+      weight: 2
